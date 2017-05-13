@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-cloudprint",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Node-RED implementation of cloud printing (currently only google)",
   "dependencies": {
     "cloud-print": "git+https://github.com/k13-engineering/node-cloud-print.git"
