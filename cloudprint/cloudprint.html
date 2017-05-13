@@ -1,0 +1,66 @@
+<script type="text/javascript">
+  RED.nodes.registerType('cloudprint', {
+    category: 'output',
+    color: '#a6bbcf',
+    defaults: {
+      name: {
+        value: ""
+      }
+    },
+    credentials: {
+      printerId: {
+        type: "text"
+      },
+      clientId: {
+        type: "text"
+      },
+      clientSecret: {
+        type: "text"
+      },
+      accessToken: {
+        type: "text"
+      },
+      refreshToken: {
+        type: "text"
+      }
+    },
+    inputs: 1,
+    outputs: 0,
+    icon: "printer.png",
+    align: "right",
+    label: function() {
+      return this.name || "lower-case";
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="cloudprint">
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+    <div class="form-row">
+      <label for="node-input-printerId"><i class="fa fa-user"></i> <span data-i18n="cloudprint.label.printerId"></span></label>
+      <input type="text" id="node-input-printerId">
+    </div>
+    <div class="form-row">
+      <label for="node-input-clientId"><i class="fa fa-user"></i> <span data-i18n="cloudprint.label.clientId"></span></label>
+      <input type="text" id="node-input-clientId">
+    </div>
+    <div class="form-row">
+      <label for="node-input-clientSecret"><i class="fa fa-user"></i> <span data-i18n="cloudprint.label.clientSecret"></span></label>
+      <input type="text" id="node-input-clientSecret">
+    </div>
+    <div class="form-row">
+      <label for="node-input-accessToken"><i class="fa fa-user"></i> <span data-i18n="cloudprint.label.accessToken"></span></label>
+      <input type="text" id="node-input-accessToken">
+    </div>
+    <div class="form-row">
+      <label for="node-input-refreshToken"><i class="fa fa-user"></i> <span data-i18n="cloudprint.label.refreshToken"></span></label>
+      <input type="text" id="node-input-refreshToken">
+    </div>
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="cloudprint">
+  <p>A simple node that prints documents to google cloud print</p>
+</script>

@@ -1,0 +1,11 @@
+{
+    "cloudprint": {
+        "label": {
+            "printerId": "Printer ID",
+            "clientId": "Client ID",
+            "clientSecret": "Client Secret",
+            "accessToken": "Access Token",
+            "refreshToken": "Refresh Token"
+        }
+    }
+}
