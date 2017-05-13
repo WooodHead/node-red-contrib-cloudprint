@@ -40,8 +40,6 @@ module.exports = function (RED) {
       }, (err) => {
         if (err) {
           node.error("failed to print", msg);
-        } else {
-          console.log("successfully printed!");
         }
       });
     });
